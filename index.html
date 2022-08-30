@@ -9,30 +9,31 @@
         background-color:FBFOE8;
         
     }
-
-.menubar ul{
-    list-style: none;
-    display: -webkit-inline-box;
     
-  
-}
-    
-.menubar a{
-
-    text-decoration: none;
-    display: block;
-    text-align: center;
-    color: #534859;
-    margin: 0 35px;
-
-}
-.menubar{
-    height:50px;
-    background:#BADFE7;
+.menu{
+    height:60px;
     font-family: 'Lucida Sans';
-    font-size: 16px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
-  
+li{
+
+    list-style: none;
+    display:none;
+    text-align: center;
+
+  }
+
+  a{
+    text-decoration: none;
+    align-items: center;
+  }
+
+
+
 li.pointer{
     cursor: pointer;
 }
@@ -42,6 +43,29 @@ li:hover{
     text-decoration: underline;
 
 }
+.navbar{
+    float: right;
+    cursor: pointer;
+}
+.close{
+    display: none;
+}
+
+.box{
+    display: none;
+}
+
+#box:checked ~ ul.menu li{
+    display: block;
+}
+#box:checked ~ label.navbar.close{
+    display: block;
+}
+#box:checked ~ .open{
+    display: none;
+}
+
+
 .anime{
     animation: fadeIn 3s;
    }
@@ -50,35 +74,27 @@ li:hover{
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
+
+
 </style>
 <body>
-
-    <div class="menubar">
-       <div class="logo">
-        <img src="logomenu.jpg" style="width:50px;float: left;">
-       </div>
-       <center>
-        <ul>
-        <li class="pointer"><a href="#">Home</a></li>
+    <nav class="nav">
+        <input type="checkbox" id="box" class="box">
+        <label for="box" class="navbar" >
+        <img src="logomenu.jpg" class="open" style="width: 50px;">
+            <close><img src="nomenu.jpg" class="close" style="width:50px;"></close>
+        </label>
+   
+       
+        <ul class="menu">
+        <li><a href="#">Home</a></li>
         <li><a href="#">Projects</a></li>
         <li><a href="#">Extras</a></li>
-        </ul>
-        </center>
-        </div>
-
-    <br><br><br>
-    <div class="anime" style="color: #534859;">
-    <h3 style="color:#534859;font-size: 40px;font-family: Verdana;padding-left: 90px;">HEY!</h3>
+        <li><a href="#">Projects</a></li>
+       
+    </ul>
+    </nav>
     
- 
-    <h3 style="color:#534859;font-size: 40px;font-family: Verdana;padding-left: 90px;">Welcome
-    to my <h3 style="width:fit-content;font-size: 40px;
-  font-family: Verdana;margin-left: 90px;color:#6FB3B8;">Portfolio</h3>
-  </div>
 
-
-
-
-<h1>heyyy</h1>
 </body>
 </html>
