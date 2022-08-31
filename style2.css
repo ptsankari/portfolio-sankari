@@ -3,13 +3,16 @@ body {
 }
 
 .menu {
-  height: 60px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   font-family: "Lucida Sans";
   font-size: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 20px;
+  background: #5AB9EA;
 }
 
 li {
@@ -24,6 +27,7 @@ li {
 a {
   text-decoration: none;
   align-items: center;
+  color: white;
 }
 
 li.pointer {
@@ -76,14 +80,17 @@ li:hover {
 @media only screen and (min-width: 560px) {
   .navbar {
     display: none;
+    background-color: #5AB9EA;
   }
 }
 @media only screen and (min-width: 560px) {
   .menu {
     flex-direction: row;
     display: flex;
+    background-color: #5AB9EA;
   }
   .menu li {
     display: block;
+    background-color: #5AB9EA;
   }
 }/*# sourceMappingURL=style2.css.map */
