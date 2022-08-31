@@ -1,88 +1,16 @@
 <!DOCTYPE html>
 <head>
+    <link rel="stylesheet" href="style2.css">
     <title>
         Portfolio sank
     </title>
 </head>
-<style>
-    body{
-        background-color:FBFOE8;
-        
-    }
-    
-.menu{
-    height:60px;
-    font-family: 'Lucida Sans';
-    font-size: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-li{
-
-    list-style: none;
-    display:none;
-    text-align: center;
-
-  }
-
-  a{
-    text-decoration: none;
-    align-items: center;
-  }
-
-
-
-li.pointer{
-    cursor: pointer;
-}
-
-li:hover{
-   
-    text-decoration: underline;
-
-}
-.navbar{
-    float: right;
-    cursor: pointer;
-}
-.close{
-    display: none;
-}
-
-.box{
-    display: none;
-}
-
-#box:checked ~ ul.menu li{
-    display: block;
-}
-#box:checked ~ label.navbar.close{
-    display: block;
-}
-#box:checked ~ .open{
-    display: none;
-}
-
-
-.anime{
-    animation: fadeIn 3s;
-   }
-
-   @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-
-</style>
 <body>
     <nav class="nav">
         <input type="checkbox" id="box" class="box">
-        <label for="box" class="navbar" >
-        <img src="logomenu.jpg" class="open" style="width: 50px;">
-            <close><img src="nomenu.jpg" class="close" style="width:50px;"></close>
+        <label for="box" class="navbar">
+        <img src="logomenu.jpg" class="open" style="width: 90px;">
+        <img src="nomenu.jpg" class="close" style="width:50px;">
         </label>
    
        
@@ -90,7 +18,7 @@ li:hover{
         <li><a href="#">Home</a></li>
         <li><a href="#">Projects</a></li>
         <li><a href="#">Extras</a></li>
-        <li><a href="#">Projects</a></li>
+        <li><a href="#">About</a></li>
        
     </ul>
     </nav>
