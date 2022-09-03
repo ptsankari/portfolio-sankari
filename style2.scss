@@ -5,15 +5,14 @@ body{
 
 .menu{
 height:fit-content;
-font-family: 'Lucida Sans';
+font-family:sans-serif;
 font-size: 15px;
 display: flex;
 flex-direction: column;
 align-items: center;
 margin: 20px;
 background:#5AB9EA;
-
-
+position: fixed;
 
 
 }
@@ -25,6 +24,7 @@ text-align: center;
 text-transform: uppercase;
 padding-top: 20px;
 padding: 20px;
+position: fixed;
 
 
 
@@ -63,17 +63,25 @@ display: none;
 display: block;
 }
 
+h4{
+    font-family:'Lucida Sans';
+    padding-left: 40px;
+    font-size: 40px;
+    color:black;
+}
+
+
 
 
 .anime{
 animation: fadeIn 3s;
 }
-
 @keyframes fadeIn {
-0% { opacity: 0; }
-100% { opacity: 1; }
-}
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
 
+    
 
 
 @media only screen and(min-width:560px){
@@ -82,6 +90,7 @@ animation: fadeIn 3s;
         &bar{
         display: none;
         background-color: #5AB9EA;
+        
         
         
         

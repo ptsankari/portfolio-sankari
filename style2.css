@@ -55,6 +55,13 @@ li:hover {
   display: block;
 }
 
+h4 {
+  font-family: "Lucida Sans";
+  padding-left: 40px;
+  font-size: 40px;
+  color: black;
+}
+
 .anime {
   -webkit-animation: fadeIn 3s;
           animation: fadeIn 3s;

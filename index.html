@@ -1,29 +1,94 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="style2.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--meta name="viewport" content="width=device-width, initial-scale=1.5"-->
     <title>
         Portfolio sank
     </title>
 </head>
+<style>
+    .pic{
+    border:solid;
+    width:500px;
+    height: 300px;
+    }
+
+
+    .tag{
+    animation: fadeIn 3s;
+    }
+@keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+        }
+
+
+        
+</style>
+
 <body>
+    <div class="fixmen" style="position:fixed;width:-webkit-fill-available;">
     <nav class="nav">
         <input type="checkbox" id="box" class="box">
         <label for="box" class="navbar">
-        <img src="logomenu.jpg" class="open" style="width: 90px;">
+        <img src="logomenu.jpg" class="open" style="width: 70px;">
     
         </label>
-   
        
         <ul class="menu">
+        
         <li><a href="#">Home</a></li>
         <li><a href="#">Projects</a></li>
         <li><a href="#">Extras</a></li>
         <li><a href="#">About</a></li>
+        
        
     </ul>
     </nav>
+    </div>
+
     
 
+<br>
+<br>
+<br>
+    <div class="anime">
+        <h4>Welcome to my </h4>
+            <h4>Portfolio website</h4>
+    </div>
+    <br>
+    <br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="dis_projects" style="display:inline;">
+    <div class="tag" data-aos="fade-right" style="float:left;">
+
+        <p style="float:left;font-family:'Lucida Sans';font-size:30px;padding-left:90px;">Projects that I've <br> been working on:</p>
+        <br>
+        <hr style="width:300px;height: 5px;color:#5AB9EA;background-color:#5AB9EA;margin-top: 2px;margin-left: 90px">
+    
+        </div>
+         
+<div class="outside" data-aos="fade-left" style="display:-webkit-inline-box;float:right; ">
+
+
+    <p onclick="change()" id="dis"><img src="leftarrow.jpg" style="width: 40px;margin-top: 140px;"></p>
+    
+    
+    <div class="pic" style="float:right;">
+    
+       <p id="img1"><img src="ecom.jpg" style="width: 500px;height:300px;float: right;"></p>
+        
+    </div>
+
+    <img src="rightarrow.jpg" style="width: 50px;margin-top: 140px;">
+</div>
+
+
+</div> 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
