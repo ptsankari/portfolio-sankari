@@ -2,19 +2,28 @@
 <head>
     <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.5">
+    <!--meta name="viewport" content="width=device-width, initial-scale=1.5"-->
     <title>
         Portfolio sank
     </title>
 </head>
 <style>
-    .pic{
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    .pics{
     border:solid;
     width:500px;
     height: 300px;
     }
 
-
+.disslides{
+width: 500px;
+height: 400px;
+}
     .tag{
     animation: fadeIn 3s;
     }
@@ -54,38 +63,49 @@
 <br>
 <br>
     <div class="anime">
+        <br><br>
         <h4>Welcome to my </h4>
             <h4>Portfolio website</h4>
     </div>
     <br>
-    <br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br>
 
-<div class="dis_projects" style="display:inline;">
-    <div class="tag" data-aos="fade-right" style="float:left;">
 
-        <p style="float:left;font-family:'Lucida Sans';font-size:30px;padding-left:90px;">Projects that I've <br> been working on:</p>
-        <br>
-        <hr style="width:300px;height: 5px;color:#5AB9EA;background-color:#5AB9EA;margin-top: 2px;margin-left: 90px">
+    
+
+<center>
+<div class="dis_projects" style="display:inline;width: 80px;align-items: center;">
+    <div class="tag" data-aos="fade-right">
+
+        <p style="font-family:'Lucida Sans';font-size:30px;margin-bottom: 2px;">Projects that<br> I've been working on:</p>
+        <hr style="width:300px;color:#5AB9EA;background-color:#5AB9EA;border:solid;border-color: #5AB9EA;">
     
         </div>
          
-<div class="outside" data-aos="fade-left" style="display:-webkit-inline-box;float:right; ">
+        <br><br>
+    
+<div class="outside" data-aos="fade-left" style="display:-webkit-inline-box;">
 
+    <center>
+<div class="slide">
+    <img src="leftarrow.jpg" style="width: 40px;margin-top: 140px;margin-bottom: 120px;">
+    
+    
 
-    <p onclick="change()" id="dis"><img src="leftarrow.jpg" style="width: 40px;margin-top: 140px;"></p>
-    
-    
-    <div class="pic" style="float:right;">
-    
-       <p id="img1"><img src="ecom.jpg" style="width: 500px;height:300px;float: right;"></p>
         
-    </div>
+        <img src="random.jpg" style="width:300px;">
+         
+    
 
-    <img src="rightarrow.jpg" style="width: 50px;margin-top: 140px;">
+    <img src="rightarrow.jpg" style="width: 50px;margin-top: 140px;margin-bottom: 120px;">
+    </div>
+    </center>
+    </div>
 </div>
 
-
 </div> 
+</center>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
