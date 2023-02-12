@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" href="style2.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!--meta name="viewport" content="width=device-width, initial-scale=1.5"-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Raleway&display=swap" rel="stylesheet">
+
+    
+    
     <title>
         Portfolio sank
     </title>
+   <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
 </head>
 <style>
 
@@ -31,13 +39,146 @@ height: 400px;
         0% { opacity: 0; }
         100% { opacity: 1; }
         }
+.bookshelf{
+    float: right;
+    padding-right:200px;
+  
+}
+.books{
+    display:flex;
+}
+.vl {
+  width:50px;
+  color:black;
+  height: 100px;
+  background-color:lightblue;
+  writing-mode: vertical-rl;
+  padding-top: 10px;
+  padding-right: 15px;
+  font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+}
+.vl2 {
+    width:50px;
+  color:black;
+  height: 100px;
+  background-color:pink;
+  writing-mode: vertical-rl;
+  padding-top: 10px;
+  padding-right: 15px;
+  font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+
+}
+.vl3{
+    width:50px;
+  color:black;
+  height: 100px;
+  background-color:greenyellow;
+  writing-mode: vertical-rl;
+  padding-top: 10px;
+  padding-right: 15px;
+  font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+} 
+.vl4{
+    width:50px;
+  color:black;
+  height: 100px;
+  background-color:yellow;
+  writing-mode: vertical-rl;
+  padding-top: 10px;
+  padding-right: 15px;
+  font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+}   
+
+.half{
+    background-color: black;
+    color: white;
+    border-radius: 300px;
+    width:200px;
+    padding-top:150px;
+}
+
+.right{
+    background-color: black;
+    display: inline-block;
+    border-bottom-right-radius:90px;
+    border-top-right-radius:90px;
+    padding-top: 150px;
+    width:80px;
+}
 
 
-        
+h3{
+    font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif; 
+font-size: 25px;
+}
+h4{
+    font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-size: 40px;
+padding-left: 50px;
+}
+
+   p{
+      
+      color:black; 
+      
+
+   }
+
+   
+ul{
+   display:-webkit-inline-box;
+   list-style: none;
+   width: auto;
+   text-decoration: none;
+   color:#E0BBE4;
+
+   
+}
+li{
+   text-decoration: none;
+   color: #E0BBE4;
+   padding:10px;
+   font-family: Arial;
+   font-size: 19px;
+   text-decoration: none;
+}
+a{
+   text-decoration: none;
+   color: white;
+
+}
+li:hover{
+   text-decoration: underline;
+}
+
+
+@keyframes fadeIn {
+ 0% { opacity: 0; }
+ 100% { opacity: 1; }
+}
+
+.navbar navbar-expand-lg navbar-light bg-light{
+    background-color: #E0BBE4;
+}
+#navbarNav{
+    background-color: 	#add8e6;
+}
 </style>
 
 <body>
-    <div class="fixmen" style="position:fixed;width:-webkit-fill-available;">
+  <!--<div class="fixmen" style="position:fixed;width:-webkit-fill-available;">
     <nav class="nav">
         <input type="checkbox" id="box" class="box">
         <label for="box" class="navbar">
@@ -57,55 +198,100 @@ height: 400px;
     </nav>
     </div>
 
-    
 
-<br>
-<br>
-<br>
-    <div class="anime">
+
+<div class="half">
+
+<h1>hi</h1>
+
+</div>-->
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!--<a class="navbar-brand" href="#"><img src="logo.jpg" style="width:50px;"></a>-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Bookings</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link href="#">Contact us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<div class="total">
+    <div class="anime" style="padding-top:150px;padding-left: 40px;font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;">
         <br><br>
         <h4>Welcome to my </h4>
             <h4>Portfolio website</h4>
     </div>
-    <br>
-    <br><br><br><br><br><br><br><br><br><br><br><br>
-    <br>
+</div>
 
+<div class="bookshelf">
+    <hr style="width:200px;height:20px;color:#4f3222;background-color:#4f3222;border:solid;border-color:#4f3222;">
+    <div class="books">
+    <div class="vl"><p>HTML</p></div>
+    <div class="vl2"><p>CSS</p></div>
+    <div class="vl3"><p>Javascript</p></div>
+    <div class="vl4"><p>C++</p></div>
+    </div>
+    <hr style="width:200px;height:20px;color:#4f3222;background-color:#4f3222;border:solid;border-color:#4f3222;">
+   
 
+</div>
     
 
-<center>
-<div class="dis_projects" style="display:inline;width: 80px;align-items: center;">
-    <div class="tag" data-aos="fade-right">
 
-        <p style="font-family:'Lucida Sans';font-size:30px;margin-bottom: 2px;">Projects that<br> I've been working on:</p>
+<center>
+
+    <div class="tag" data-aos="fade-right" style="padding-top:300px;">
+
+        <p style="font-family: 'Montserrat', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Raleway', sans-serif;font-size:30px;margin-bottom: 2px;">Projects that<br> I've been working on:</p>
         <hr style="width:300px;color:#5AB9EA;background-color:#5AB9EA;border:solid;border-color: #5AB9EA;">
     
         </div>
          
         <br><br>
-    
-<div class="outside" data-aos="fade-left" style="display:-webkit-inline-box;">
-
-    <center>
-<div class="slide">
-    <img src="leftarrow.jpg" style="width: 40px;margin-top: 140px;margin-bottom: 120px;">
-    
-    
-
-        
-        <img src="random.jpg" style="width:300px;">
-         
-    
-
-    <img src="rightarrow.jpg" style="width: 50px;margin-top: 140px;margin-bottom: 120px;">
-    </div>
     </center>
-    </div>
-</div>
+    <div class="container" style="display:flex;width:100%; flex-wrap:wrap;justify-content:space-around;text-align: center;">
+    <div id="item1">
+        
+            <img src="one.jpg" style="width:350px;">
+           
+        <h3>Bookstore</h3>
+            </div>
 
-</div> 
-</center>
+            <div id="item2">
+                <img src="two.jpg" style="width:350px;">
+                
+                <h3>Sample quiz</h3>
+            </div>
+     </div>  
+      
+    
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>   
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();

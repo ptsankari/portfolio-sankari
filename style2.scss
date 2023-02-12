@@ -5,7 +5,9 @@ body{
 
 .menu{
 height:fit-content;
-font-family:sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
 font-size: 15px;
 display: flex;
 flex-direction: column;
@@ -64,7 +66,9 @@ display: block;
 }
 
 h4{
-    font-family:'Lucida Sans';
+    font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
     padding-left: 40px;
     font-size: 40px;
     color:black;
@@ -74,6 +78,7 @@ h4{
 
 
 .anime{
+    padding-top: 100px;
 animation: fadeIn 3s;
 }
 @keyframes fadeIn {
