@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.6">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Raleway&display=swap" rel="stylesheet">
@@ -102,23 +102,31 @@ font-family: 'Raleway', sans-serif;
 }
 
 
-h3{
-    font-family: 'Montserrat', sans-serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'Raleway', sans-serif; 
-font-size: 25px;
-}
+
 h4{
     font-family: 'Montserrat', sans-serif;
 font-family: 'Poppins', sans-serif;
 font-family: 'Raleway', sans-serif;
-font-size: 40px;
+font-size: 80px;
 padding-left: 50px;
+font-weight:800;
+color:#36454F;
 }
+h2{
+  font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-weight: 800;
+font-size: 60px;
+padding-right: 30px;
 
+
+}
    p{
       
       color:black; 
+      font-weight:400;
+font-size: 20px;
       
 
    }
@@ -143,23 +151,33 @@ li{
 }
 a{
    text-decoration: none;
-   color: white;
+   color: #5AB9EA;
 
 }
 li:hover{
    text-decoration: underline;
 }
-
-
-@keyframes fadeIn {
- 0% { opacity: 0; }
- 100% { opacity: 1; }
+.nav-link{
+color: #aec6cf;
 }
+
 
 
 #navbarNav{
-    background-color: 	#add8e6;
+    background-color: white;
+    color: #5AB9EA;
 }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+ 
+.fade-in {
+   opacity:0;  /* make things invisible upon start */
+   animation:fadeIn ease-in 1;
+   animation-fill-mode:forwards;
+   animation-duration:2s;
+  }
+ 
+
+ 
 </style>
 
 <body>
@@ -190,6 +208,11 @@ li:hover{
 <h1>hi</h1>
 
 </div>-->
+<div class="bg-image" 
+     style="background-image:url('bluebg2.jpg');
+            height:700px;
+            background-repeat: no-repeat;
+            background-size: cover;background-position: center;"-->
 
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -203,32 +226,44 @@ li:hover{
           <a class="nav-link" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About us</a>
+          <a class="nav-link" href="#">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Bookings</a>
+          <a class="nav-link" href="#">Google foo bar</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link href="#">Contact us</a>
+          <a class="nav-link href="#"></a>
         </li>
       </ul>
     </div>
   </nav>
 
 <div class="container" style="width:100%;display: contents;">
-    <div class="anime" style="padding-top:150px;padding-left: 40px;font-family: 'Montserrat', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Raleway', sans-serif;float: left;">
+    <div class="anime" style="padding-top:150px;float: left;">
         
-        <h4>Welcome to my </h4>
-            <h4>Portfolio website</h4>
+        <h4 class="fade-in">Hey! Welcome to my </h4>
+            <h4 class="fade-in">Portfolio website</h4>
+            <!--<img src="rocket2.jpg"-->
         </div>
-            <img src="bitmoji.jpg" style="width:300px;float: right;padding-top:90px;">
+            <!--img src="bitmoji2.jpg"  style="width:400px;float: right;padding-top:110px;padding-right:60px;"-->
   </div>
+</div>
+ 
 
-<br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br>
+
+
 <br>
+
+<div class="container2" style="display: contents;">
+  <h2 class="fade-in" style="float:left;padding-top: 50px;padding-left: 60px;">I'm Sankari<br>A front end developer,<br>C++ Programmer</h2>
+    <img src="htmlbg2.jpg" style="float:center; width:500px;padding-left: 30px;">
+
+</div>
+
+
+<br><br><br><br><br><br>
+<br><br><br><br><br>
+
 
 <!--<div class="bookshelf">
     <hr style="width:200px;height:20px;color:#4f3222;background-color:#4f3222;border:solid;border-color:#4f3222;">
@@ -249,8 +284,9 @@ li:hover{
 <center>
     <div class="main">
 
-        <p style="display:inline-block;font-family: 'Montserrat', sans-serif;font-family: 'Poppins', sans-serif;font-family: 'Raleway', sans-serif;font-size:30px;margin-bottom: 2px;">
-            Projects that<br> I've been working on:</p>
+        <h3 style="display:inline-block;font-family: 'Montserrat', sans-serif;font-family: 'Poppins', sans-serif;font-family: 'Raleway', 
+        sans-serif;font-size:40px;margin-bottom: 2px;font-weight: 400;">
+            Projects that<br> I've been working on:</h3>
         <hr style="width:300px;color:#5AB9EA;background-color:#5AB9EA;border:solid;border-color: #5AB9EA;">
     
         </div>
@@ -260,15 +296,15 @@ li:hover{
     <div class="container" style="display:flex;width:100%; flex-wrap:wrap;justify-content:space-around;text-align: center;">
     <div id="item1">
         
-            <img src="one.jpg" style="width:400px;">
+     <a href="https://ptsankari.github.io/bookstore/"><img src="one.jpg" style="width:400px;"></a>
            
-        <h3>Bookstore</h3>
+        <p>Bookstore</p>
             </div>
 
             <div id="item2">
-                <img src="two.jpg" style="width:400px;">
+                <a href="https://ptsankari.github.io/QUIZZ/"><img src="two.jpg" style="width:400px;"></a>
                 
-                <h3>Sample quiz</h3>
+                <p>Sample quiz</p>
             </div>
      </div>  
       
