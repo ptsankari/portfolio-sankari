@@ -4,6 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=0.7">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Raleway&display=swap" rel="stylesheet">
 
     
@@ -155,25 +158,41 @@ li:hover{
 color: #aec6cf;
 }
 
+.tag {
+}
 
+.tag {
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: all 1s;
+}
+
+.tag.visible {
+  opacity: 6;
+  transform: translate(0, 0);
+}
 
 #navbarNav{
     background-color: white;
     color: #5AB9EA;
 }
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
- 
-.fade-in {
-   opacity:0;  /* make things invisible upon start */
-   animation:fadeIn ease-in 1;
-   animation-fill-mode:forwards;
-   animation-duration:2s;
+
+
+section{
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 100vh;
+ }
+.hidden{
+    opacity: 0;
+    transition:all 3s;
   }
 
+.show{
+  opacity: 1;
+}
  
-
-
-
  
 </style>
 
@@ -235,6 +254,8 @@ color: #aec6cf;
     </div>
   </nav>
 
+
+<section class="hidden">
 <div class="container" style="width:100%;padding-left: 20px;">
     <div class="anime" style="padding-top:150px;float: left;">
         
@@ -244,21 +265,24 @@ color: #aec6cf;
             <!--img src="bitmoji2.jpg"  style="width:400px;float: right;padding-top:110px;padding-right:60px;"-->
   </div>
 </div>
- 
-
-
+</section>
 
 <br>
 
-<div class="container2" style="display: contents;">
-  <h2 class="fade-in" style="float:left;padding-top: 50px;padding-left: 60px;">I'm Sankari<br>A front end developer,<br>C++ Programmer</h2>
+<section class="hidden">
+<div class="container" style="display: contents;">
+  <div class="fade-in">
+  <h2 style="float:left;padding-top: 50px;padding-left: 60px;">I'm Sankari<br>A front end developer,<br>C++ Programmer</h2>
     <img src="htmlbg2.jpg" style="float:center; width:500px;padding-left: 30px;">
-
 </div>
+</div>
+</section>
+
 
 <hr style="width:300px;height:20px;color:#5AB9EA;background-color:#5AB9EA;border:solid;border-color: #5AB9EA;">
 <br><br><br><br><br><br>
 <br><br>
+
 
 
 <!--<div class="bookshelf">
@@ -276,7 +300,7 @@ color: #aec6cf;
     
 
 
-
+<section class="hidden">
 <center>
     <div class="main">
 
@@ -315,8 +339,26 @@ color: #aec6cf;
      </div>  
       
 
+    </div>
+    </div>
+</section>
+<script>
+const observer=new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+      console.log(entry)
+      if(entry.isIntersecting){
+        entry.target.classList.add('show');
+      }
+        else{
+          entry.target.classList.remove('show');
+        }
+      });
+});
+ 
 
-
+  const hiddenElements=document.querySelectorAll('.hidden');
+  hiddenElements.forEach((el)=>observer.observe(el));
+</script>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 

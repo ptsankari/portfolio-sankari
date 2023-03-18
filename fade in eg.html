@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<style>
+   
+ section{
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 100vh;
+ }
+.hidden{
+    opacity: 0;
+    transition:all 5s;
+  }
+
+.show{
+  opacity: 1;
+}
+ 
+</style>
+<body>
+   <section class="hidden">
+    <h1>Heloooo</h1>
+    <p>babeeeeeeeeeeeeeee babbebebebebebe tell meee
+      tell meeeeee 
+    </p>
+   </section>
+
+   <section class="hidden">
+    <h1>Heloooo</h1>
+    <p>babeeeeeeeeeeeeeee babbebebebebebe tell meee
+      tell meeeeee 
+    </p>
+   </section>
+
+   <section class="hidden">
+    <h1>Heloooo</h1>
+    <p>babeeeeeeeeeeeeeee babbebebebebebe tell meee
+      tell meeeeee 
+    </p>
+   </section>
+
+
+
+
+<script>
+const observer=new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+      console.log(entry)
+      if(entry.isIntersecting){
+        entry.target.classList.add('show');
+      }
+        else{
+          entry.target.classList.remove('show');
+        }
+      });
+});
+ 
+
+  const hiddenElements=document.querySelectorAll('.hidden');
+  hiddenElements.forEach((el)=>observer.observe(el));
+  </script>
+</body>
+</html>
