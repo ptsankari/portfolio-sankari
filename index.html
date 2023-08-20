@@ -372,12 +372,16 @@ section{
   attribute</p>
 </div>
 
-<br><br>
+<br><br><br><br>
 
-  <div id="backdetails" style="width:700px;">
+  <div id="backdetails" style="width:800px;">
     <center>
-<img src="back.jpg.png" style="width: 400px;margin-left: 30px;"></center>
-<br><br>
+<img src="back.jpg.png" onclick="enlarge()" id="img" style="width: 400px;margin-left: 30px;"></center>
+<br><br><br><br>
+
+
+<button onclick="resetImg()">Reset</button>
+
 <p style="padding-left:30px;margin-top: 30px;margin-right: 30px;text-align:justify;">At the backend, I create a database in Mongo DB atlas
   in a cluter under the name favs you can see the place where the entered details about the Anime's name and reviews can be viewed.
   It's a simple and easy implementation. Compared to MySql, Mongo DB can save up more amount of data and it's easy to use.
@@ -405,6 +409,23 @@ const observer=new IntersectionObserver((entries)=>{
 
   const hiddenElements=document.querySelectorAll('.hidden');
   hiddenElements.forEach((el)=>observer.observe(el));
+
+
+  img = document.getElementById("img");
+        // Function to increase image size
+        function enlarge() {
+            // Set image size to 1.5 times original
+            img.style.transform = "scale(1.7)";
+            // Animation effect
+            img.style.transition = "transform 0.25s ease";
+        }
+        // Function to reset image size
+        function resetImg() {
+            // Set image size to original
+            img.style.transform = "scale(1)";
+            img.style.transition = "transform 0.25s ease";
+        }
+
 </script>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
