@@ -9,6 +9,7 @@
           <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Raleway&display=swap" rel="stylesheet">
 
+
     
     
     <title>
@@ -125,7 +126,7 @@ padding-right: 30px;
       
       color:black; 
       font-weight:400;
-font-size: 20px;
+font-size: 30px;
       
 
    }
@@ -136,13 +137,10 @@ ul{
    list-style: none;
    width: auto;
    text-decoration: none;
-   color:#96fbc4;
 
-   
 }
 li{
    text-decoration: none;
-   color:#96fbc4;
    padding:10px;
    font-family: Arial;
    font-size: 19px;
@@ -160,8 +158,6 @@ li:hover{
 color: #aec6cf;
 }
 
-.tag {
-}
 
 .tag {
   opacity: 0;
@@ -222,6 +218,38 @@ section{
     background-position: 200% center;
   }
 }
+.carousel-nav {
+    padding: 5px;
+    background-color: black;
+}
+
+.carousel-nav li {
+    display: inline-block;
+}
+
+.carousel-full {
+    overflow: auto;
+    padding: 10px;
+}
+
+.carousel-full ul {
+    white-space: nowrap;
+}
+
+.carousel-full li {
+    width: 100%;
+    display: inline-block;
+    white-space: normal;
+    vertical-align: top;
+}
+
+
+
+.carousel-full span {
+    clear: left;
+    color: black;
+}
+
 </style>
 
 <body>
@@ -305,7 +333,7 @@ section{
 </center>
 
 
-<hr style="width:300px;height:20px;color:#5AB9EA;background-color:#5AB9EA;border:solid;border-color: #5AB9EA;">
+<hr style="width:100%;height:20px;color:#5AB9EA;background-color:#5AB9EA;border:solid;border-color: #5AB9EA;">
 <br><br><br><br><br><br>
 <br><br>
 
@@ -338,7 +366,25 @@ section{
         </div>
          </center>
         <br><br>
-   
+        <center>
+        <div class="carousel-full">
+          <ul>
+              <li id="item5">
+                  <img src="thriller.png" style="width:500px;"><br>
+                  <p>Bookstore</p>
+              </li>
+              <li id="item6">
+                  <img src="rockmain.png" style="width: 400px;"><br>
+                  <p>Rock,Paper,Scrissors<br>Game</p>
+              </li>
+              <li id="item7">
+                  <img src="quotes.jpg.png" style="width: 500px;"><br>
+                  <p>Quotes generator</p>
+              </li>
+          </ul>
+      </div>
+      </center>
+      
    <!--<div class="container" style="display:flex;width:100%; flex-wrap:wrap;justify-content:space-around;text-align: center;">
     <div id="item1">
         
@@ -365,220 +411,8 @@ section{
      </div> 
       <br><br><br>
     -->
-    <div
-  id="carouselMultiItemExample"
-  class="carousel slide carousel-dark text-center"
-  data-mdb-ride="carousel"
->
-  <!-- Controls -->
-  <div class="d-flex justify-content-center mb-4">
-    <button
-      class="carousel-control-prev position-relative"
-      type="button"
-      data-mdb-target="#carouselMultiItemExample"
-      data-mdb-slide="prev"
-    >
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button
-      class="carousel-control-next position-relative"
-      type="button"
-      data-mdb-target="#carouselMultiItemExample"
-      data-mdb-slide="next"
-    >
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  <!-- Inner -->
-  <div class="carousel-inner py-4">
-    <!-- Single item -->
-    <div class="carousel-item active">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="card">
-              <img
-                src="https://mdbcdn.b-cdn.net/img/new/standard/nature/181.webp"
-                class="card-img-top"
-                alt="Waterfall"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk
-                  of the card's content.
-                </p>
-                <a href="#!" class="btn btn-primary">Button</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 d-none d-lg-block">
-            <div class="card">
-              <img
-                src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp"
-                class="card-img-top"
-                alt="Sunset Over the Sea"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk
-                  of the card's content.
-                </p>
-                <a href="#!" class="btn btn-primary">Button</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 d-none d-lg-block">
-            <div class="card">
-              <img
-                src="https://mdbcdn.b-cdn.net/img/new/standard/nature/183.webp"
-                class="card-img-top"
-                alt="Sunset over the Sea"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk
-                  of the card's content.
-                </p>
-                <a href="#!" class="btn btn-primary">Button</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Single item -->
-    <div class="carousel-item">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-12">
-            <div class="card">
-              <img
-                src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp"
-                class="card-img-top"
-                alt="Fissure in Sandstone"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk
-                  of the card's content.
-                </p>
-                <a href="#!" class="btn btn-primary">Button</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 d-none d-lg-block">
-            <div class="card">
-              <img
-                src="https://mdbcdn.b-cdn.net/img/new/standard/nature/185.webp"
-                class="card-img-top"
-                alt="Storm Clouds"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk
-                  of the card's content.
-                </p>
-                <a href="#!" class="btn btn-primary">Button</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 d-none d-lg-block">
-            <div class="card">
-              <img
-                src="https://mdbcdn.b-cdn.net/img/new/standard/nature/186.webp"
-                class="card-img-top"
-                alt="Hot Air Balloons"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk
-                  of the card's content.
-                </p>
-                <a href="#!" class="btn btn-primary">Button</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Single item -->
-    <div class="carousel-item">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-            <div class="card">
-              <img
-                src="https://mdbcdn.b-cdn.net/img/new/standard/nature/187.webp"
-                class="card-img-top"
-                alt="Peaks Against the Starry Sky"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk
-                  of the card's content.
-                </p>
-                <a href="#!" class="btn btn-primary">Button</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mb-4 mb-lg-0 d-none d-lg-block">
-            <div class="card">
-              <img
-                src="https://mdbcdn.b-cdn.net/img/new/standard/nature/188.webp"
-                class="card-img-top"
-                alt="Bridge Over Water"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk
-                  of the card's content.
-                </p>
-                <a href="#!" class="btn btn-primary">Button</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mb-4 mb-lg-0 d-none d-lg-block">
-            <div class="card">
-              <img
-                src="https://mdbcdn.b-cdn.net/img/new/standard/nature/189.webp"
-                class="card-img-top"
-                alt="Purbeck Heritage Coast"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the bulk
-                  of the card's content.
-                </p>
-                <a href="#!" class="btn btn-primary">Button</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Inner -->
-</div>
-<!-- Carousel wrapper -->
+    
+<br><br>
 <div class="container">
   <div class="fade-in">
   <div id="mongoproj">
@@ -586,7 +420,7 @@ section{
    
       <h3 style="display:inline-block;font-family: 'Montserrat', sans-serif;font-family: 'Poppins', sans-serif;font-family: 'Raleway', 
       sans-serif;font-size:40px;margin-bottom: 2px;font-weight: 400;">Full Stack project:</h3>
-       <hr style="width:300px;color:#5AB9EA;background-color:#5AB9EA;border:solid;border-color: #5AB9EA;">
+       
     </center>
    
 
@@ -640,6 +474,38 @@ section{
 </section>
 
 <script>
+var current = 0,
+    total = document.querySelectorAll('carousel-full li').length;
+
+$('carousel-nav a').click(function () {
+    var id = parseInt($(this).attr('href').slice(4));
+    if (id) {
+        current = id;
+    }
+});
+
+$('carousel-nav a[href="#next"]').click(function () {
+    e.preventDefault();
+    if (current < total) {
+        current = current + 1;
+    } else {
+        current = 0;
+    }
+    window.location.hash = 'item' + current;
+});
+
+$('carousel-nav a[href="#prev"]').click(function (e) {
+    e.preventDefault();
+    if (current > 0) {
+        current = current - 1;
+    } else {
+        current = total;
+    }
+    window.location.hash = 'item' + current;
+});
+
+
+
 const observer=new IntersectionObserver((entries)=>{
     entries.forEach((entry)=>{
       console.log(entry)
