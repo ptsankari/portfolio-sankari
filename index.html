@@ -127,6 +127,7 @@ padding-right: 30px;
       color:black; 
       font-weight:400;
 font-size: 30px;
+
       
 
    }
@@ -217,37 +218,6 @@ section{
   to {
     background-position: 200% center;
   }
-}
-.carousel-nav {
-    padding: 5px;
-    background-color: black;
-}
-
-.carousel-nav li {
-    display: inline-block;
-}
-
-.carousel-full {
-    overflow: auto;
-    padding: 10px;
-}
-
-.carousel-full ul {
-    white-space: nowrap;
-}
-
-.carousel-full li {
-    width: 100%;
-    display: inline-block;
-    white-space: normal;
-    vertical-align: top;
-}
-
-
-
-.carousel-full span {
-    clear: left;
-    color: black;
 }
 
 </style>
@@ -353,37 +323,35 @@ section{
 </div>-->
     
 
-
-<section class="hidden">
 <center>
     <div class="main">
 
         <h3 style="display:inline-block;font-family: 'Montserrat', sans-serif;font-family: 'Poppins', sans-serif;font-family: 'Raleway', 
         sans-serif;font-size:40px;margin-bottom: 2px;font-weight: 400;">
-            Projects that<br> I've been working on:</h3>
+            Small projects of mine</h3>
         <hr style="width:300px;color:#5AB9EA;background-color:#5AB9EA;border:solid;border-color: #5AB9EA;">
     
         </div>
          </center>
         <br><br>
-        <center>
-        <div class="carousel-full">
-          <ul>
-              <li id="item5">
-                  <img src="thriller.png" style="width:500px;"><br>
-                  <p>Bookstore</p>
-              </li>
-              <li id="item6">
-                  <img src="rockmain.png" style="width: 400px;"><br>
-                  <p>Rock,Paper,Scrissors<br>Game</p>
-              </li>
-              <li id="item7">
-                  <img src="quotes.jpg.png" style="width: 500px;"><br>
-                  <p>Quotes generator</p>
-              </li>
-          </ul>
-      </div>
-      </center>
+      
+       
+                  <div class="picone" style="display:flex;flex-wrap: wrap;justify-content: center;padding: 10px;">
+                  <div class="hehe">
+                    <a href="https://ptsankari.github.io/bookstore/"><img src="thriller.png" style="width:440px;padding: 10px;"></a><center><p>Bookstore</p></center></div>
+                    <br>
+          
+        
+                  <div class="hehe3">
+                    <a href="https://ptsankari.github.io/quotes_generator/"><img src="quotes.jpg.png" style="width: 400px;padding: 10px;"></a><center><p>Quotes generator</p></center></div>
+
+
+                    <div class="hehe2">
+                      <a href="https://ptsankari.github.io/rock-paper-scissors/"><img src="rock.png" style="width:300px;padding: 10px;"></a><center><p>Rock,Paper,Scrissors</p></center></div>
+                  </div>
+             
+     
+   
       
    <!--<div class="container" style="display:flex;width:100%; flex-wrap:wrap;justify-content:space-around;text-align: center;">
     <div id="item1">
@@ -412,7 +380,7 @@ section{
       <br><br><br>
     -->
     
-<br><br>
+
 <div class="container">
   <div class="fade-in">
   <div id="mongoproj">
@@ -420,7 +388,7 @@ section{
    
       <h3 style="display:inline-block;font-family: 'Montserrat', sans-serif;font-family: 'Poppins', sans-serif;font-family: 'Raleway', 
       sans-serif;font-size:40px;margin-bottom: 2px;font-weight: 400;">Full Stack project:</h3>
-       
+       <hr style="width:300px;color:#5AB9EA;background-color:#5AB9EA;border:solid;border-color: #5AB9EA;">
     </center>
    
 
@@ -474,37 +442,6 @@ section{
 </section>
 
 <script>
-var current = 0,
-    total = document.querySelectorAll('carousel-full li').length;
-
-$('carousel-nav a').click(function () {
-    var id = parseInt($(this).attr('href').slice(4));
-    if (id) {
-        current = id;
-    }
-});
-
-$('carousel-nav a[href="#next"]').click(function () {
-    e.preventDefault();
-    if (current < total) {
-        current = current + 1;
-    } else {
-        current = 0;
-    }
-    window.location.hash = 'item' + current;
-});
-
-$('carousel-nav a[href="#prev"]').click(function (e) {
-    e.preventDefault();
-    if (current > 0) {
-        current = current - 1;
-    } else {
-        current = total;
-    }
-    window.location.hash = 'item' + current;
-});
-
-
 
 const observer=new IntersectionObserver((entries)=>{
     entries.forEach((entry)=>{
