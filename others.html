@@ -27,10 +27,16 @@ background-size: cover;
     
    #content{
     font-size: 20px;
-    padding: 40px;
-    background-color: white;
-    
+    background-color: white; 
    } 
+
+   #content2{
+    width: 80%;
+    background-color: white;
+    font-size: 20px;
+    padding: 20px;
+    margin-left: 30px;
+   }
    section{
   display: grid;
    align-content: center;
@@ -46,41 +52,87 @@ background-size: cover;
 }
 
 .container1{
-  width: 40%;
+  width: 100%;
   background-color: grey;
-    position: absolute;    
-}
-* {box-sizing:border-box}
-.skill1{
-  padding-top: 10px;
-  width: 40%;
-  color: white;
+    position: absolute;
+    margin-left: 100px;    
 }
 
-.comm{
-  width: 85%;
+* {box-sizing:border-box}
+
+.values{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.bar{
+  position: relative;
+  border: 2px solid aqua;
+  border-radius: 20px;
+}
+
+.bar div{
+  position: relative;
+  width: 0;
+  height: 9px;
+  border-radius: 10px;
   background-color: aqua;
 }
 
-.html{
-  width: 80%;
-  background-color: yellow;
+
+#com-bar{
+    animation: com-fill 2s forwards;
+}
+@keyframes com-fill{
+    100%{
+        width: 90%;
+    }
 }
 
 
+#html-bar{
+    animation: html-fill 2s forwards;
+}
+@keyframes html-fill{
+    100%{
+        width: 80%;
+    }
+}
+
+
+
+#cplus-bar{
+    animation: cplus-fill 2s forwards;
+}
+@keyframes cplus-fill{
+    100%{
+        width: 70%;
+    }
+}
+
+
+#java-bar{
+    animation: java-fill 2s forwards;
+}
+@keyframes java-fill{
+    100%{
+        width: 50%;
+    }
+}
 </style>
 <body>
+  <br><br><br>
     <section class="hidden">
         <div class="container">
  
    <center>
    <div id="content">
     <center><h1><b>About me</b></h1></center><br>
-    <p style="letter-spacing: 2px;line-height: 30px;font-size: 25px;">Hey! glad you checked out my website. I'm Sankari, a Self-motivated, Adaptable and a Grateful person.
-    
-    
-      I love to communicate with people and explore their thoughts and views. The world if full of opportunities and I always try my
-best to put in work and gain experience from it.I've participated in various technical competitons and won cash prizes. I've also expressed my MC skills<br>
+    <p style="letter-spacing: 2px;line-height: 30px;font-size: 20px;">Hey! glad you checked out my website. I'm Sankari, a Self-motivated, Adaptable and a Grateful person.
+      I love to communicate with people and explore their thoughts and views.<br><br> The world if full of opportunities and I always try my
+best to put in work and gain experience from it.I've participated in various technical competitons and won cash prizes. 
+<br><br>I've also expressed my MC skills<br>
 in various stages and hosted events .I usually spend my leisure time listing to song and watching true crime stories or self care/vlogs on Youtube.
 Youtube is great! Isn't it? It will always be my favourite social media.
     </p>
@@ -94,19 +146,57 @@ Youtube is great! Isn't it? It will always be my favourite social media.
   </div>
   <br><br>
 
-  <div id="content">
-<p style="font-size: 25px;">Communication:</p>
-<div class="container1">
-  <div class="skill comm">85%</div>
-</div>
-<br><br>
 
-<p style="font-size: 25px;">Html:</p>
-<div class="container1">
-  <div class="skill html">80%</div>
+  <div id="content2">
+  
+    <h1>My Skills</h1>
+ 
+    <br>
+<br>
+<div class="skills">
+  <div class="values">
+    <p>Html , Css</p>
+    <p>80%</p>
+  </div>
+  <div class="bar">
+    <div id="html-bar"></div>
+  </div>
 </div>
+<br>
+<div class="skills">
+  <div class="values">
+    <p>C++</p>
+    <p>70%</p>
+  </div>
+  <div class="bar">
+    <div id="cplus-bar"></div>
+  </div>
 </div>
 
+<br>
+<div class="skills">
+  <div class="values">
+    <p>Java</p>
+    <p>50%</p>
+  </div>
+  <div class="bar">
+    <div id="java-bar"></div>
+  </div>
+</div>
+
+<br>
+<div class="skills">
+  <div class="values">
+    <p>Communication</p>
+    <p>90%</p>
+  </div>
+  <div class="bar">
+    <div id="com-bar"></div>
+  </div>
+</div>
+<br>
+
+</div>
 </section>
 
 
