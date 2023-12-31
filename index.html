@@ -30,34 +30,30 @@
   align-items: center;
 }
 
-h1 {
-  font-size: 90px;
-  text-transform: uppercase;
-  letter-spacing: -3px;
-  transition: 700ms ease;
-  font-variation-settings: "wght" 311;
-  margin-bottom: 0.8rem;
-  outline: none;
-  text-align: center;
-  --s: 0.1em;   /* the thickness of the line */
-  --c: #3b96b7; /* the color */
+
+.containermain{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  align-items: center;
+    
+}
+.textani{
+  font-size: 80px;
+  font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+transition: all 2s ease 0s;
   
-  color: #0000;
-  padding-bottom: var(--s);
-  background: 
-    linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
-    linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
-  -webkit-background-clip: text,padding-box;
-          background-clip: text,padding-box;
-  transition: 0.5s;
+}
+.textani:hover{
+  transform: translateY(-20px);
+  transform: all 2s ease 0;
+  color: #5AB9EA;
 }
 
-h1:hover {
-  font-variation-settings: "wght" 582; 
-  letter-spacing: 1px;
-  --_p: 100%
-}
-    
+
 
 #navbarNav {
     background-color:#CCF1FF;
@@ -98,8 +94,7 @@ h2{
   font-family: 'Montserrat', sans-serif;
 font-family: 'Poppins', sans-serif;
 font-family: 'Raleway', sans-serif;
-font-weight: 800;
-font-size: 65px;
+font-size: 60px;
 padding-right: 30px;
 letter-spacing: 2px;
 
@@ -110,9 +105,6 @@ letter-spacing: 2px;
       color:black; 
       font-weight:400;
 font-size:20px;
-
-      
-
    }
 
    
@@ -213,6 +205,8 @@ p{
 .pro:hover{
   transform: translateY(-20px);
   transform: 250ms;
+
+
 }
 
 .btn{
@@ -258,13 +252,33 @@ color:white;
   </nav>
 
 
-<section class="hidden">
-<div class="container">
-  <h1 contenteditable>Hey! Welcome to my <br>Portfolio Website</h1>
-</div>
-</section>
+<center>
+<div class="containermain" style="margin-top: 250px;">
+  <div class="textani">
+    <span>Hey!&nbsp</span>
+   </div>
 
-<br>
+    
+    <span class="textani">Welcome&nbsp</span>
+    
+    <div class="textani">
+    <span>to&nbsp</span>
+    </div>
+    <div class="textani">
+    <span>my&nbsp</span>
+    </div>
+    </div>
+    <div class="containermain">
+    <div class="textani">
+    <span>Portfolio&nbsp</span>
+    </div>
+    <div class="textani">
+    <span>Website&nbsp</span>
+    </div>
+</div>
+</center>
+
+<br><br><br>
 
 <center>
 <section class="hidden">
@@ -296,6 +310,11 @@ color:white;
         
   <center>
      <div class="main2" style="display:flex;flex-wrap: wrap;justify-content: space-around">           
+
+      <div class="pro">             
+        <a href="https://ptsankari.github.io/song-mood-on/"><img src="song mood on.jpg.png" style="width:400px;padding: 10px;"></a><center><p>Song on mood on</p></center>
+          </div>   
+
 
   <div class="pro">             
 <a href="https://ptsankari.github.io/bookstore/"><img src="thriller.png" style="width:400px;padding: 10px;"></a><center><p>Bookstore</p></center>
