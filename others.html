@@ -28,22 +28,12 @@ background-size: cover;
    #content{
     font-size: 20px;
     background-color: white; 
+    width: 70%;
    } 
 
-   #content2{
-    width: 80%;
-    background-color: white;
-    font-size: 20px;
-    padding: 20px;
-    margin-left: 30px;
-   }
-   section{
-  display: grid;
-   align-content: center;
-  min-height: 100vh;
- }
+ 
 .hidden{
-    opacity: 0;
+    
     transition:all 3s;
   }
 
@@ -67,9 +57,10 @@ background-size: cover;
   margin-bottom: 10px;
 }
 .bar{
-  position: relative;
-  border: 2px solid aqua;
+  position:relative;
   border-radius: 20px;
+
+  
 }
 
 .bar div{
@@ -77,7 +68,8 @@ background-size: cover;
   width: 0;
   height: 9px;
   border-radius: 10px;
-  background-color: aqua;
+  background-color: blanchedalmond;
+  float: left;
 }
 
 #blogpart{
@@ -102,9 +94,6 @@ background-size: cover;
         width: 80%;
     }
 }
-
-
-
 #cplus-bar{
     animation: cplus-fill 2s forwards;
 }
@@ -123,15 +112,34 @@ background-size: cover;
         width: 60%;
     }
 }
+#mainmain{
+  background-color: lightgray;
+  margin-top: 10px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media (max-width:600px) {
+  #mainmain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
 </style>
 <body>
   <br><br><br>
-    <section class="hidden">
+    
         <div class="container">
  
    <center>
    <div id="content">
-    <center><h1><b>About me</b></h1></center><br>
+    <center><h1><b>About me</b></h1></center>
+    <br>
     <p style="letter-spacing: 2px;line-height: 30px;font-size: 20px;">Hey! glad you checked out my website. I'm Sankari, a Self-motivated, Adaptable and a Grateful person.
       I love to communicate with people and explore their thoughts and views.<br><br> The world if full of opportunities and I always try my
 best to put in work and gain experience from it.I've participated in various technical competitons and won cash prizes. 
@@ -140,7 +148,6 @@ in various stages and hosted events .I usually spend my leisure time listening t
 Youtube is great! Isn't it? It will always be my favourite social media.
     </p>
   
-   </center>
    <div id="content">
    <center><h1>Let's connect</h1><br>
    <a href="https://www.linkedin.com/in/ptsankari/"> <img src="linkedin.jpg" style="width: 50px;margin: 30px;"></a>
@@ -149,14 +156,14 @@ Youtube is great! Isn't it? It will always be my favourite social media.
   </div>
   <br><br>
 
-
-  <div id="content2">
+</div>
+<center>
+  <div id="mainmain">
   
-    <h1>My Skills</h1>
- 
-    <br>
-<br>
+
+<div clas="displaybar" style="width: 400px;">
 <div class="skills">
+  <h2>My Skills</h2>
   <div class="values">
     <p>Html , Css</p>
     <p>80%</p>
@@ -200,7 +207,13 @@ Youtube is great! Isn't it? It will always be my favourite social media.
 <br>
 
 </div>
-</section>
+<img src="brown study.jpg" style="width: 250px;height: 300px;">
+</div>
+</center>
+
+
+
+
 
 <center>
 <div id="blogpart">
@@ -212,47 +225,6 @@ Youtube is great! Isn't it? It will always be my favourite social media.
 </div>
 </center>
 
-<script>
-    const observer=new IntersectionObserver((entries)=>{
-    entries.forEach((entry)=>{
-      console.log(entry)
-      if(entry.isIntersecting){
-        entry.target.classList.add('show');
-      }
-        else{
-          entry.target.classList.remove('show');
-        }
-      });
-});
- 
 
-  const hiddenElements=document.querySelectorAll('.hidden');
-  hiddenElements.forEach((el)=>observer.observe(el));
-
-
-  img = document.getElementById("img");
-        // Function to increase image size
-        function enlarge() {
-            // Set image size to 1.5 times original
-            img.style.transform = "scale(1.7)";
-            // Animation effect
-            img.style.transition = "transform 0.25s ease";
-        }
-        // Function to reset image size
-        function resetImg() {
-            // Set image size to original
-            img.style.transform = "scale(1)";
-            img.style.transition = "transform 0.25s ease";
-        }
-
-</script>
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>   
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-</script>
 </body>
 </html>

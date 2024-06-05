@@ -168,27 +168,7 @@ section{
 p{
   letter-spacing: 2px;
 }
-.animate-charcter
-{
-   text-transform: uppercase;
-  background-image: linear-gradient(
-    20deg,
-    #30cfd0 0%,
-   
-    #330867 100%
-  );
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 50% auto;
-  color: #fff;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
-  display: inline-block;
-      font-size: 90px;
-}
+
 
 @keyframes textclip {
   to {
@@ -220,6 +200,18 @@ p{
 background-color:#3b96b7;
 color:white;
 
+}
+
+.container2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+@media (max-width:600px) {
+  .container2{
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 </style>
 
@@ -273,14 +265,15 @@ color:white;
 
 <center>
 <section class="hidden">
-<div class="container2" style="display: flex;justify-content: space-around;">
+<div class="container2">
  
-  <h3>I'm Sankari <br>A front end developer,<br> C++ Programmer ,Club Organizer<br>
+  <h3>I'm Sankari <br>A front end developer<br> C++ Programmer ,Club Organizer<br>
   UI/UX designer
   </h3>
-  <img src="sank profile.jpeg" style="float:center; width:300px;height: 400px;border-radius: 20px;">
-</div>
-</div>
+
+  <center><img src="sank profile.jpeg" style="width:300px;height: 400px;border-radius: 20px;"></center>
+</div><br><br><br>
+
 <center><button class="btn"><a href="Sankari main.pdf" download style="color: white;">Download my resume</a></button></center>
 </section>
 </center>
@@ -330,7 +323,7 @@ color:white;
 <a href="https://ptsankari.github.io/rock-paper-scissors/"><img src="rock.png" style="width: 400px;padding: 10px;"></a><center><p>Rock,Paper,Scrissors</p></center>
 </div>
  <div class="pro">
-  <img src="jornal.jpg.png" style="width: 400px;padding: 10px;"><center><p>Journal Application - React</p></center>
+  <img src="jornal.jpg.png" style="width: 400px;padding: 10px;"><center><p>Journal Application - React</p><br><p>(On process)</p></center>
  </div>
  
  <div class="pro">
