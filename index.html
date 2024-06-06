@@ -206,6 +206,7 @@ color:white;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-top: 100px;
 }
 @media (max-width:600px) {
   .container2{
@@ -213,6 +214,25 @@ color:white;
     justify-content: center;
   }
 }
+
+@keyframes appear {
+  from{
+    opacity: 0;
+    scale:0.5;
+  }
+  to{
+    opacity: 1;
+    scale:1;
+  }
+}
+  .container2,.main,.main2,#uix,.container{
+    animation: appear linear 9s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40% ;
+
+
+  }
+
 </style>
 
 <body>
@@ -234,7 +254,7 @@ color:white;
     </div>
   </nav>
 
-
+<div class="view">
 <center>
 <div class="containermain" style="margin-top: 250px;">
   <div class="textani">
@@ -264,7 +284,7 @@ color:white;
 <br><br><br>
 
 <center>
-<section class="hidden">
+
 <div class="container2">
  
   <h3>I'm Sankari <br>A front end developer<br> C++ Programmer ,Club Organizer<br>
@@ -275,7 +295,7 @@ color:white;
 </div><br><br><br>
 
 <center><button class="btn"><a href="Sankari main.pdf" download style="color: white;">Download my resume</a></button></center>
-</section>
+
 </center>
 
 
@@ -402,37 +422,25 @@ color:white;
   </div>
   </div>
 
-
+</div>
 <script>
 
-const observer=new IntersectionObserver((entries)=>{
-    entries.forEach((entry)=>{
-      console.log(entry)
-      if(entry.isIntersecting){
-        entry.target.classList.add('show');
-      }
-        else{
-          entry.target.classList.remove('show');
-        }
-      });
-});
- 
 
   const hiddenElements=document.querySelectorAll('.hidden');
   hiddenElements.forEach((el)=>observer.observe(el));
 
 
   img = document.getElementById("img");
-        // Function to increase image size
+        
         function enlarge() {
-            // Set image size to 1.5 times original
+           
             img.style.transform = "scale(1.7)";
-            // Animation effect
+           
             img.style.transition = "transform 0.25s ease";
         }
-        // Function to reset image size
+       
         function resetImg() {
-            // Set image size to original
+           
             img.style.transform = "scale(1)";
             img.style.transition = "transform 0.25s ease";
         }
